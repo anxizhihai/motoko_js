@@ -4,6 +4,7 @@
       "main": "src/hello/main.mo",
       "type": "motoko"
     },
+   
     "hello_assets": {
       "dependencies": [
         "hello"

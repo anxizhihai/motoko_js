@@ -1,37 +1,37 @@
-body {
-    font-family: sans-serif;
-    font-size: 1.5rem;
+.concerned-author-list .title, .concerned-author-message-list .title, .my-message-list .title, .search-for-authors .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 15px;
+    /* cursor: pointer; */
 }
 
-img {
-    max-width: 50vw;
-    max-height: 25vw;
-    display: block;
-    margin: auto;
+.concerned-author-list, .concerned-author-message-list, .my-message-list, .search-for-authors {
+    border: 1px solid #333333;
+    border-radius: 4px;
+    min-height: 80px;
+    padding: 15px;
+    margin-top: 20px;
 }
 
-form {
-    display: flex;
-    justify-content: center;
-    gap: 0.5em;
-    flex-flow: row wrap;
-    max-width: 40vw;
-    margin: auto;
-    align-items: baseline;
+.concerned-author-list section, .concerned-author-message-list section, .my-message-list section, .search-for-authors section {
+    border: 1px solid #333333;
+    border-radius: 4px;
+    min-height: 50px;
 }
 
-button[type="submit"] {
-    padding: 5px 20px;
-    margin: 10px auto;
-    float: right;
+.followd-author-box {
+    /* border: 1px solid red; */
+    color: blue;
 }
 
-#greeting {
-    margin: 10px auto;
-    padding: 10px 60px;
-    border: 1px solid #222;
+#followd {
+    cursor: pointer;
 }
 
-#greeting:empty {
-    display: none;
+.message-box {
+    border: 1px solid #333333;
+    padding: 10px;
 }
+
+

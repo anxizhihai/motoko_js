@@ -3,20 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>hello</title>
+    <title>Microblog</title>
     <base href="/" />
     <link rel="icon" href="favicon.ico" />
     <link type="text/css" rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    
   </head>
   <body>
+    <!-- <header><h1>Microblog</h1></header> -->
     <main>
-      <img src="logo.png" alt="DFINITY logo" />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
+      <div>
+        <label for="otp">OTP:</label>
+        <input id="otp" value="123456"></input>
+      </div>
+
+      <div>
+        <label for="author">Author:</label>
+        <input id="author"></input>
+      </div>
+
+      <div>
+
+        <label for="message">What do you want to post?</label>
+        <textarea id="message"> </textarea>
+
+      </div>
+
+      <div>
+        <button id="post">POST</button>
+        &nbsp;<span id="error"></span>
+
+        <button id="getName">get_name</button>
+        &nbsp;<span id="showName"></span>
+      </div>
+
+      
+      <div class="my-message-list">
+        <span class="title">My Message List:</span>
+        <section id="posts"></section>
+      </div>
+      
+
+      <!-- <div>
+        <label for="author_Principal">Please Enter Id:</label>
+        <input type="text" id="author_Principal" placeholder="Id"></input>
+        <button id="follow">FOLLOW</button>
+         &nbsp;<span id="follow"></span>
+      </div> -->
+
+      
+      <div class="concerned-author-list">
+        <span class="title">Followed Author List:</span>
+        <section id="followd"></section>
+      </div>
+
+      <div class="concerned-author-list">
+        <span class="title">Current Click Author Message:</span>
+        <section id="CurrentClickMessage"></section>
+      </div>
+
+      <div class="search-for-authors">
+        <span class="title">Search for authors you've followed</span>
+        <input id="show_author_message" placeholder="Id"></input>
+        <button id="showAuthorMessage">Search</button>
+        <section id="followd_message_lsit"></section>
+      </div>
+
+      <div class="concerned-author-message-list">
+        <span class="title">Followed Author ALL Message List:</span>
+        <section id="followd_message"></section>
+        
+      </div>
+
+      
+      
+
     </main>
   </body>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 </html>
